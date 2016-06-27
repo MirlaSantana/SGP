@@ -59,7 +59,7 @@ describe Sprint do
 
  	it 'should be not created without release_id' do
 		@sprint.release_id = nil
-		expect(@sprint).not_to be_valid
+		expect(@sprint).to be_valid
 	end	
 
 

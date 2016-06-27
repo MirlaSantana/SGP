@@ -27,7 +27,7 @@ describe Project do
 
 	it 'should be not created without local_id' do
 		@project.local_id = nil
-		expect(@project).not_to be_valid
+		expect(@project).to be_valid
 	end 
 
 	it 'should be created with all requirements' do
